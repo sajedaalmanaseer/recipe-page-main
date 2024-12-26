@@ -1,133 +1,123 @@
-:root{
---bg-color: hsl(30, 54%, 90%);
---bg-card-color: hsl(0, 0%, 100%);
---card-color:hsl(332, 51%, 32%);
---title-color: hsl(14, 45%, 36%);
---prog-title: hsl(24, 5%, 18%);
---prog-color:hsl(30, 10%, 34%);
---line-color: hsl(30, 18%, 87%);
-
-
+:root {
+    --bg-color: hsl(30, 54%, 90%);
+    --bg-card-color: hsl(0, 0%, 100%);
+    --card-color: hsl(332, 51%, 32%);
+    --title-color: hsl(14, 45%, 36%);
+    --prog-title: hsl(24, 5%, 18%);
+    --prog-color: hsl(30, 10%, 34%);
+    --line-color: hsl(30, 18%, 87%);
 }
-*{
+
+* {
     box-sizing: border-box;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
-body{
-
-    background-color: var(--bg-color); 
-    color: var(--prog-title); 
-    height: 100%; 
+body {
+    background-color: var(--bg-color);
+    color: var(--prog-title);
     font-family: "Young Serif", serif;
-    font-weight: 400;
-    font-style: normal; 
-
-}
-
-.attribution{
-
-    width: 50%;
-    height: 98%;
-    background-color: var(--bg-card-color);
-    margin: 4% 0 5% 25%;
-    padding-bottom: 2%;
-    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.5;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
-.Food-Image{
-    width:90%;
+
+.attribution {
+    max-width: 900px;
+    background-color: var(--bg-card-color);
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     border-radius: 10px;
-    margin: 5% 0 8% 5%;
+}
+
+
+.Food-Image {
+    width: 94%;
+    max-width: 900px;
+    border-radius: 10px;
+    margin-top: 2rem ;
+    margin-left: 1.5rem;
     
-} 
-
-.text-menu{
-    margin:0 5%;   
 }
 
-p{
-  font-size: 16px;
-  margin-top: 2.5%;
-
+.text-menu {
+    font-size: 20px;
+    margin: 1rem 0;
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
 }
 
-.card-text-menu{
+p {
+    margin-top: 0.5rem;
+}
+
+.card-text-menu {
     background-color: var(--bg-color);
-    margin-top: 30px;
+    margin-top: 1.5rem;
+    margin-right:1rem ;
+    padding: 1rem;
     border-radius: 4px;
 }
 
-.parag-card{
-    padding:2% 0 1% 2%;
+.parag-card {
+    padding: 0.5rem;
     color: var(--card-color);
     font-weight: bold;
 }
 
-ul{
-    padding: 0 0 20px 30px;
-}
-ul li{
-    margin-bottom: 5px ;
-}
-ul li::marker{
-    color:var(--card-color);
+ul, ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: inherit;
 }
 
-b{
-    color: var(--prog-title);
-}
-h3{
-    color: var(--title-color);
-    padding: 15px 0 10px 0;
-}
-ol{
-    padding-left: 20px;
-}
-ol li{
-    margin-bottom: 8px;
-}
-ol li::marker{
-    color: var(--title-color);
+ul li, ol li {
+    margin-bottom: 0.5rem;
 }
 
-.table-menu{
+ul li::marker, ol li::marker {
+    color: var(--card-color);
+}
+
+h3 {
+    color: var(--title-color);
+    padding: 1rem 0;
+}
+
+.table-menu {
     display: grid;
-    grid-template-columns:50% 50%;
-    padding-left: 30px;
-
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
 }
 
-.line{
-    width: 100%;
+.line, .table-line {
+    width: 90%;
+    max-width: 550px;
     height: 1px;
     background-color: var(--line-color);
-
-   
-}
-.table-line{
-    width: 100%;
-    height: 1px;
-    background-color: var(--line-color);
-    margin: 5px 0 5px 0;
-
+    margin: 0.5rem 0;
 }
 
-.g-coior{
+.g-coior {
     color: var(--title-color);
     font-weight: bold;
 }
 
-@media (max-width:375px){
+@media (max-width: 375px) {
+
+    .attribution {
+        margin: 0rem ;
+       
+    }
+    .Food-Image {
+        width: 100%;
+        max-width: 375px;
+        margin-top: 0 ;
+        margin-left: 0;
+    }
     
-.attribution{
-   width: 100%;
-   height: 100%;
-   margin-top: 0;
-   margin-left:0 ;  
-}
-
-
+  
 }
