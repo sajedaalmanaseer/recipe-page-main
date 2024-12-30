@@ -101,6 +101,14 @@ h2 {
     height: 2px;
     background-color: var(--line-color);
     margin: 0.5rem 0;
+<<<<<<< HEAD
+=======
+
+}
+ .table-line {
+    width: 90%;
+
+>>>>>>> 8ce4139093b5fa962bf96ae6eb65a376564c1a90
 
 }
  .table-line {
