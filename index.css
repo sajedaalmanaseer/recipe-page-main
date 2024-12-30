@@ -42,6 +42,9 @@ body {
     margin-left: 1.5rem;
     
 }
+h1,h2{
+    font-family:'Outfit', serif;
+}
 
 .text-menu {
     font-size: 20px;
@@ -82,7 +85,7 @@ ul li::marker, ol li::marker {
     color: var(--card-color);
 }
 
-h3 {
+h2 {
     color: var(--title-color);
     padding: 1rem 0;
 }
@@ -93,10 +96,18 @@ h3 {
     gap: 1rem;
 }
 
-.line, .table-line {
+.line{
+    width: 97%;
+    max-width: 990px;
+    height: 2px;
+    background-color: var(--line-color);
+    margin: 0.5rem 0;
+
+}
+ .table-line {
     width: 90%;
-    max-width: 550px;
-    height: 1px;
+    max-width: 980px;
+    height: 2px;
     background-color: var(--line-color);
     margin: 0.5rem 0;
 }
@@ -109,9 +120,9 @@ h3 {
 @media (max-width: 375px) {
 
     .attribution {
-        margin: 0rem ;
-       
+        margin: 0rem ;  
     }
+
     .Food-Image {
         width: 100%;
         max-width: 375px;
