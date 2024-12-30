@@ -98,7 +98,7 @@ h3 {
 
 .line, .table-line {
     width: 90%;
-    max-width: 550px;
+    max-width: 900px;
     height: 1px;
     background-color: var(--line-color);
     margin: 0.5rem 0;
